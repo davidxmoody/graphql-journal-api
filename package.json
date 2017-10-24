@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "start": "nodemon -e js,graphql -w src/ src/index.js"
   },
   "keywords": [],
   "author": "David Moody <david@davidxmoody.com> (https://davidxmoody.com/)",
@@ -16,7 +16,9 @@
     "graphql": "^0.11.7",
     "graphql-tools": "^2.6.1",
     "marked": "^0.3.6",
+    "moment": "^2.19.1",
     "nodemon": "^1.11.0",
-    "ramda": "^0.24.1"
+    "ramda": "^0.24.1",
+    "tinycolor2": "^1.4.1"
   }
 }

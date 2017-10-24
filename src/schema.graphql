@@ -1,0 +1,27 @@
+type Entry {
+  id: String!
+  date: String!
+  deviceName: String
+  rawContent: String!
+  htmlContent: String
+  wordcount: Int
+}
+
+type Day {
+  entries: [Entry!]
+}
+
+type Week {
+  color: String!
+  days: [Day!]!
+}
+
+type Year {
+  weeks: [Week!]!
+}
+
+type Query {
+  entry(id: String!): Entry
+  entries: [Entry]!
+  years: [Year!]!
+}
